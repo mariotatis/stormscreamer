@@ -1,0 +1,84 @@
+<%= javascript_include_tag 'jquery-1.4.min.js' %>
+<%= javascript_include_tag 'loopedslider.js' %>
+<%= stylesheet_link_tag 'loopedslider.css' %>
+
+
+<div id="after_top">
+  <div id="home_left">
+    <p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam. Morbi odio ante, pretium a dictum nec, aliquet sed nibh. Nullam vehicula porta metus faucibus auctor.
+    </p>
+    <a class="follow_twitter" href="http://twitter.com/stormscreamers" target="_blank">
+      <span class="hidden_text">Follow me on Twitter</span>
+    </a>
+  </div>
+
+  <div id="home_right">
+
+    <div id="loopedSlider">
+      <div class="container_slides">
+        <div class="slides">
+          <div><img src="images/slide/01.jpg" alt="" /></div>
+          <div><img src="images/slide/02.jpg" alt="" /></div>
+          <div><img src="images/slide/03.jpg" alt="" /></div>
+          <div><img src="images/slide/04.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="previous"><span class="hidden_text">previous</span></a>
+    <a href="#" id="next" class="next"><span class="hidden_text">next</span></a>
+
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        // Option set as a global variable
+        $.fn.loopedSlider.defaults.addPagination = true;
+        $('#loopedSlider').loopedSlider({
+          autoStart: 2500,
+          restart: 5000
+        });
+      });
+    </script>
+
+  </div>
+
+</div>
+
+<div id="after_top">
+  <ul class="badges">
+    <li>
+      <img src="images/pic1.png" alt="" />
+      <div class=badge_text>
+        <p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam.
+        </p>
+      </div>
+
+      <h2>Loren Ipsum</h2>
+      <p class="short_p">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam.
+      </p>
+    </li>
+    <li><img src="images/pic2.png" alt="" />
+      <div class=badge_text>
+        <p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam.
+        </p>
+      </div>
+      <h2>Loren Ipsum</h2>
+      <p class="short_p">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam.
+      </p>
+    </li>
+    <li><img src="images/pic3.png" alt="" />
+      <div class=badge_text>
+        <p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam.
+        </p>
+      </div>
+      <h2>Loren Ipsum</h2>
+      <p class="short_p">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, lectus nec euismod molestie, erat erat mollis odio, vitae rhoncus justo erat et diam.
+      </p>
+    </li>
+  </ul>
+</div>
